@@ -1,0 +1,41 @@
+REST API required some lib as prerequisites
+
+1 -> pip install requests
+2 -> pip install jsonpath
+3 -> https://reqres.in/  check this site to get idea about get,post, put requests
+3 -> to check json data https://jsonviewer.stack.hu/
+through this json viewer we can see data in table format and write code to get the datas
+
+=========== CRUD ================
+
+Create- post
+Read - get
+Update - put/patch
+Delete - delete
+
+put - Update/replace
+patch - Update/Modify
+=============== put ===========
+In put - all properties of the object be provided while making request
+record - exist- update/replace
+record does not exist - will create user
+
+{
+ "Name":"Ankit"
+  "Phone":"909090
+  "Address":"Pune"
+}
+=========== patch ===============
+In patch - specify only the properties that you want to update
+
+{
+ "Address":"Pune"
+}
+
+======== timeout ==================
+API - slow - Down
+
+example - In case of if your Payment not completed within 30 second it should timeout
+
+##### Basic Authentication #######
+https://the-internet.herokuapp.com/
